@@ -1,16 +1,10 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[80]:
-
-
 import tensorflow as tf
 import numpy as np
 import pandas as pd
 from pandas import DataFrame
 
 
-# In[89]:
+
 
 
 #finite data genrator function
@@ -66,9 +60,6 @@ def train_and_evaluate_model(training_features, training_lables,validation_featu
     model.evaluate(validation_generator)
 
 
-# In[93]:
-
-
 from tensorflow.keras import Model
 from tensorflow.keras.layers import Dense, Input, BatchNormalization
 
@@ -107,35 +98,6 @@ epochs = 3
 
 train_and_evaluate_model(training_features, training_labels,validation_features, validation_labels,
                           input_shape,output_shape,batch_size, train_steps, epochs) 
-
-
-# In[74]:
-
-
-
-
-
-# In[75]:
-
-
-
-    
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
 
 
 
